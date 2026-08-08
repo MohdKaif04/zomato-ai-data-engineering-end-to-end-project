@@ -1,0 +1,477 @@
+[0m22:22:57.441391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290243F0500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290243F3F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290243F0530>]}
+
+
+============================== 22:22:57.446625 | c53f6b69-9bf9-474f-a276-666f184c4885 ==============================
+[0m22:22:57.446625 [info ] [MainThread]: Running with dbt=1.12.0
+[0m22:22:57.446625 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init zomato', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:22:57.466917 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Lenovo\.dbt
+[0m22:22:57.466917 [debug] [MainThread]: Starter project path: C:\Users\Lenovo\AppData\Roaming\Python\Python312\site-packages\dbt\include\starter_project
+[0m22:22:57.503861 [info ] [MainThread]: Setting up your profile.
+[0m22:24:29.574700 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:24:29.574700 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:24:29.574700 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:29:17.546530 [info ] [MainThread]: Profile zomato written to C:\Users\Lenovo\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m22:29:17.546530 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m22:29:17.546530 [info ] [MainThread]: dbt version: 1.12.0
+[0m22:29:17.558951 [info ] [MainThread]: python version: 3.12.0
+[0m22:29:17.560074 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m22:29:17.560658 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:29:17.649872 [info ] [MainThread]: Using profiles dir at C:\Users\Lenovo\.dbt
+[0m22:29:17.650849 [info ] [MainThread]: Using profiles.yml file at C:\Users\Lenovo\.dbt\profiles.yml
+[0m22:29:17.650849 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\Zomato_Data_pipeline\zomato\dbt_project.yml
+[0m22:29:17.650849 [info ] [MainThread]: adapter type: snowflake
+[0m22:29:17.650849 [info ] [MainThread]: adapter version: 1.12.0
+[0m22:29:17.749832 [info ] [MainThread]: Configuration:
+[0m22:29:17.749832 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:29:17.749832 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:29:17.749832 [info ] [MainThread]: Required dependencies:
+[0m22:29:17.749832 [debug] [MainThread]: Executing "git --help"
+[0m22:29:17.800414 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:29:17.800414 [debug] [MainThread]: STDERR: "b''"
+[0m22:29:17.800414 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:29:17.800414 [info ] [MainThread]: Connection:
+[0m22:29:17.800414 [info ] [MainThread]:   account: FHWNPXY-VK33569
+[0m22:29:17.800414 [info ] [MainThread]:   user: KAIF04
+[0m22:29:17.800414 [info ] [MainThread]:   database: ZOMATO_WH
+[0m22:29:17.800414 [info ] [MainThread]:   warehouse: ZOMATO_WH
+[0m22:29:17.800414 [info ] [MainThread]:   role: DBT_ROLE
+[0m22:29:17.800414 [info ] [MainThread]:   schema: STAGING
+[0m22:29:17.800414 [info ] [MainThread]:   authenticator: None
+[0m22:29:17.800414 [info ] [MainThread]:   oauth_client_id: None
+[0m22:29:17.800414 [info ] [MainThread]:   query_tag: None
+[0m22:29:17.800414 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:29:17.800414 [info ] [MainThread]:   host: None
+[0m22:29:17.812917 [info ] [MainThread]:   port: None
+[0m22:29:17.813944 [info ] [MainThread]:   proxy_host: None
+[0m22:29:17.813944 [info ] [MainThread]:   proxy_port: None
+[0m22:29:17.813944 [info ] [MainThread]:   protocol: None
+[0m22:29:17.815352 [info ] [MainThread]:   connect_retries: 1
+[0m22:29:17.815352 [info ] [MainThread]:   connect_timeout: None
+[0m22:29:17.815352 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:29:17.816845 [info ] [MainThread]:   retry_all: False
+[0m22:29:17.816845 [info ] [MainThread]:   insecure_mode: False
+[0m22:29:17.818049 [info ] [MainThread]:   reuse_connections: True
+[0m22:29:17.819048 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:29:17.819048 [info ] [MainThread]:   workload_identity_provider: None
+[0m22:29:17.820051 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m22:29:17.820705 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m22:29:17.820705 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m22:29:18.154017 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:29:18.157772 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:29:18.157772 [debug] [MainThread]: On debug: select 1 as id
+[0m22:29:18.157772 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:29:19.685511 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.526 seconds
+[0m22:29:19.685511 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:29:19.685511 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:29:19.685511 [info ] [MainThread]: Your new dbt project "zomato" was created!
+Initialized new project in D:\Projects\Zomato_Data_pipeline\zomato\zomato
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:29:19.685511 [debug] [MainThread]: Command `dbt init` succeeded at 22:29:19.685511 after 382.39 seconds
+[0m22:29:19.685511 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:29:19.685511 [debug] [MainThread]: On debug: Close
+[0m22:29:19.866930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029022AA1FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029035B962A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029035BA32C0>]}
+[0m22:29:19.881000 [debug] [MainThread]: Flushing usage events
+[0m22:29:21.107888 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:03.840135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2C4666C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2C467A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2A15A780>]}
+
+
+============================== 22:48:03.840135 | 6671ec5a-92dd-496a-8087-45b29e9de2e4 ==============================
+[0m22:48:03.840135 [info ] [MainThread]: Running with dbt=1.12.0
+[0m22:48:03.840135 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select staging', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m22:48:04.653051 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:48:04.653051 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:48:04.655056 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:48:05.032582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3DBFA000>]}
+[0m22:48:05.143839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2C315580>]}
+[0m22:48:05.143839 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m22:48:05.504931 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m22:48:05.504931 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:48:05.504931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2C466240>]}
+[0m22:48:08.496220 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.zomato.staging
+- models.zomato.marts
+- models.snapshot.zomato
+[0m22:48:08.496220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2A15A780>]}
+[0m22:48:08.549658 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m22:48:08.552806 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m22:48:08.591917 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m22:48:08.602405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3E0D3350>]}
+[0m22:48:08.602405 [info ] [MainThread]: Found 545 macros
+[0m22:48:08.602405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6671ec5a-92dd-496a-8087-45b29e9de2e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3DBA61B0>]}
+[0m22:48:08.602405 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m22:48:08.602405 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m22:48:08.602405 [debug] [MainThread]: Command end result
+[0m22:48:08.633035 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m22:48:08.633035 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m22:48:08.633035 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m22:48:08.633035 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m22:48:08.633035 [debug] [MainThread]: Command `dbt run` succeeded at 22:48:08.633035 after 4.99 seconds
+[0m22:48:08.633035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E2A473A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E281BBAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E28128200>]}
+[0m22:48:08.633035 [debug] [MainThread]: Flushing usage events
+[0m22:48:09.852718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:09:12.514261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B458DE8230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B45D650950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B45D66EE40>]}
+
+
+============================== 08:09:12.518276 | 0642a36f-45d3-447a-a319-7de9629360cc ==============================
+[0m08:09:12.518276 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:09:12.520287 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select staging', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:09:13.961451 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:09:13.961451 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:09:13.961451 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:09:14.384931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0642a36f-45d3-447a-a319-7de9629360cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B45D6D9C70>]}
+[0m08:09:14.496993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0642a36f-45d3-447a-a319-7de9629360cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46EC8FAA0>]}
+[0m08:09:14.496993 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:09:14.874934 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:09:15.009722 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:09:15.015627 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:09:15.015627 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:09:15.015627 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.zomato.marts
+- models.zomato.staging
+- models.snapshot.zomato
+[0m08:09:15.015627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0642a36f-45d3-447a-a319-7de9629360cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B45BAA04A0>]}
+[0m08:09:15.073644 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:09:15.081737 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:09:15.119905 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:09:15.121910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0642a36f-45d3-447a-a319-7de9629360cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46F2777D0>]}
+[0m08:09:15.138388 [info ] [MainThread]: Found 545 macros
+[0m08:09:15.138388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0642a36f-45d3-447a-a319-7de9629360cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46F191E20>]}
+[0m08:09:15.138388 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m08:09:15.138388 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m08:09:15.142397 [debug] [MainThread]: Command end result
+[0m08:09:15.170070 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:09:15.180555 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:09:15.180555 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:09:15.186872 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m08:09:15.188881 [debug] [MainThread]: Command `dbt run` succeeded at 08:09:15.188881 after 2.97 seconds
+[0m08:09:15.188881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46F191430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46EE51490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B46F000320>]}
+[0m08:09:15.190888 [debug] [MainThread]: Flushing usage events
+[0m08:09:16.741561 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:12:53.968503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0912F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0912D4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0912D160>]}
+
+
+============================== 08:12:53.979411 | 067039e8-e015-44d8-80b7-38c7c2ae2f50 ==============================
+[0m08:12:53.979411 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:12:53.979411 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select staging', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:12:55.506468 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:12:55.506468 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:12:55.508475 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:12:55.932635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '067039e8-e015-44d8-80b7-38c7c2ae2f50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB1A31DD30>]}
+[0m08:12:56.052221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '067039e8-e015-44d8-80b7-38c7c2ae2f50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB17B93B60>]}
+[0m08:12:56.052221 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:12:56.500265 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:12:56.656247 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:12:56.656247 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:12:56.660627 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:12:56.660627 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.zomato.staging
+- models.zomato.marts
+- models.snapshot.zomato
+[0m08:12:56.664366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '067039e8-e015-44d8-80b7-38c7c2ae2f50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB091582C0>]}
+[0m08:12:56.746735 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:12:56.760559 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:12:56.813072 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:12:56.824908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '067039e8-e015-44d8-80b7-38c7c2ae2f50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB1AD37860>]}
+[0m08:12:56.824908 [info ] [MainThread]: Found 545 macros
+[0m08:12:56.824908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '067039e8-e015-44d8-80b7-38c7c2ae2f50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB1A817710>]}
+[0m08:12:56.824908 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m08:12:56.824908 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m08:12:56.836821 [debug] [MainThread]: Command end result
+[0m08:12:56.871709 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:12:56.871709 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:12:56.871709 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:12:56.884161 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m08:12:56.886132 [debug] [MainThread]: Command `dbt run` succeeded at 08:12:56.886132 after 3.11 seconds
+[0m08:12:56.886132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0748A240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB1ABBE600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0503ED80>]}
+[0m08:12:56.886132 [debug] [MainThread]: Flushing usage events
+[0m08:12:58.320747 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:18:49.541917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB873C170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB873C110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB873C080>]}
+
+
+============================== 08:18:49.546446 | 958d8a9a-5932-4e3e-8512-a75e858867de ==============================
+[0m08:18:49.546446 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:18:49.547452 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select staging', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:18:50.410415 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:18:50.410415 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:18:50.410415 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:18:50.712202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014ECAA8BEC0>]}
+[0m08:18:50.841020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB83AD4C0>]}
+[0m08:18:50.841020 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:18:51.204009 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:18:51.244613 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m08:18:51.244613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014ECBDB3BC0>]}
+[0m08:18:51.964453 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.snapshot.zomato
+- models.zomato.staging
+- models.zomato.marts
+[0m08:18:51.964453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014ECBC6A270>]}
+[0m08:18:52.012796 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:18:52.012796 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:18:52.046727 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:18:52.063220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014ECBC114F0>]}
+[0m08:18:52.065807 [info ] [MainThread]: Found 545 macros
+[0m08:18:52.065807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '958d8a9a-5932-4e3e-8512-a75e858867de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014ECBD07050>]}
+[0m08:18:52.065807 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m08:18:52.065807 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m08:18:52.065807 [debug] [MainThread]: Command end result
+[0m08:18:52.096025 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:18:52.104048 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:18:52.112446 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:18:52.112446 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m08:18:52.112446 [debug] [MainThread]: Command `dbt run` succeeded at 08:18:52.112446 after 2.90 seconds
+[0m08:18:52.112446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EBA26DDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EBA1351C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EB86F1A60>]}
+[0m08:18:52.112446 [debug] [MainThread]: Flushing usage events
+[0m08:18:53.643572 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:26:02.959582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A99BA07CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A99E4E2720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A99B1201D0>]}
+
+
+============================== 08:26:02.959582 | 8361d8c7-cb59-432d-bb9c-9a16565dabe0 ==============================
+[0m08:26:02.959582 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:26:02.959582 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:26:02.992304 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in D:\Projects\Zomato_Data_pipeline\dbt_project.yml
+[0m08:26:02.992304 [debug] [MainThread]: Command `dbt clean` failed at 08:26:02.992304 after 0.37 seconds
+[0m08:26:02.992304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A99E76D4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9A0304F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9A03F45F0>]}
+[0m08:26:02.992304 [debug] [MainThread]: Flushing usage events
+[0m08:26:04.300709 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:28:02.024453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677759FD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026779598920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026779B640E0>]}
+
+
+============================== 08:28:02.032244 | 33bdfddb-af4b-4097-87e2-839d2ca29d86 ==============================
+[0m08:28:02.032244 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:28:02.032244 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'invocation_command': 'dbt clean', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:28:02.169194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33bdfddb-af4b-4097-87e2-839d2ca29d86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677A2B2B70>]}
+[0m08:28:02.194682 [debug] [MainThread]: Command `dbt clean` succeeded at 08:28:02.194682 after 0.44 seconds
+[0m08:28:02.194682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677759FD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677C051F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677BCEBCB0>]}
+[0m08:28:02.194682 [debug] [MainThread]: Flushing usage events
+[0m08:28:03.682256 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:28:19.668442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024551ED3DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002455333A300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024557533AA0>]}
+
+
+============================== 08:28:19.668442 | 9cdcddf6-952d-4aeb-82be-e656bc52f947 ==============================
+[0m08:28:19.668442 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:28:19.668442 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:28:19.693770 [info ] [MainThread]: dbt version: 1.12.0
+[0m08:28:19.693770 [info ] [MainThread]: python version: 3.12.0
+[0m08:28:19.693770 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m08:28:19.693770 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m08:28:25.761857 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:28:25.761857 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:28:25.761857 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:28:33.638220 [info ] [MainThread]: Using profiles dir at C:\Users\Lenovo\.dbt
+[0m08:28:33.638220 [info ] [MainThread]: Using profiles.yml file at C:\Users\Lenovo\.dbt\profiles.yml
+[0m08:28:33.638220 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\Zomato_Data_pipeline\dbt_project.yml
+[0m08:28:33.647620 [info ] [MainThread]: adapter type: snowflake
+[0m08:28:33.649540 [info ] [MainThread]: adapter version: 1.12.0
+[0m08:28:33.996239 [info ] [MainThread]: Configuration:
+[0m08:28:33.996239 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:28:33.996239 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m08:28:34.002099 [info ] [MainThread]: Required dependencies:
+[0m08:28:34.004132 [debug] [MainThread]: Executing "git --help"
+[0m08:28:34.108649 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:28:34.109577 [debug] [MainThread]: STDERR: "b''"
+[0m08:28:34.110656 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:28:34.111535 [info ] [MainThread]: Connection:
+[0m08:28:34.112352 [info ] [MainThread]:   account: FHWNPXY-VK33569
+[0m08:28:34.112794 [info ] [MainThread]:   user: KAIF04
+[0m08:28:34.113928 [info ] [MainThread]:   database: ZOMATO
+[0m08:28:34.114785 [info ] [MainThread]:   warehouse: ZOMATO_WH
+[0m08:28:34.115794 [info ] [MainThread]:   role: DBT_ROLE
+[0m08:28:34.115794 [info ] [MainThread]:   schema: STAGING
+[0m08:28:34.115794 [info ] [MainThread]:   authenticator: None
+[0m08:28:34.115794 [info ] [MainThread]:   oauth_client_id: None
+[0m08:28:34.115794 [info ] [MainThread]:   query_tag: None
+[0m08:28:34.115794 [info ] [MainThread]:   client_session_keep_alive: False
+[0m08:28:34.115794 [info ] [MainThread]:   host: None
+[0m08:28:34.115794 [info ] [MainThread]:   port: None
+[0m08:28:34.115794 [info ] [MainThread]:   proxy_host: None
+[0m08:28:34.122184 [info ] [MainThread]:   proxy_port: None
+[0m08:28:34.124194 [info ] [MainThread]:   protocol: None
+[0m08:28:34.124194 [info ] [MainThread]:   connect_retries: 1
+[0m08:28:34.124194 [info ] [MainThread]:   connect_timeout: None
+[0m08:28:34.124194 [info ] [MainThread]:   retry_on_database_errors: False
+[0m08:28:34.124194 [info ] [MainThread]:   retry_all: False
+[0m08:28:34.124194 [info ] [MainThread]:   insecure_mode: False
+[0m08:28:34.124194 [info ] [MainThread]:   reuse_connections: True
+[0m08:28:34.124194 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m08:28:34.128861 [info ] [MainThread]:   workload_identity_provider: None
+[0m08:28:34.128861 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m08:28:34.128861 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m08:28:34.128861 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:28:34.948985 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m08:28:34.964748 [debug] [MainThread]: Using snowflake connection "debug"
+[0m08:28:34.964748 [debug] [MainThread]: On debug: select 1 as id
+[0m08:28:34.964748 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:28:36.290124 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.328 seconds
+[0m08:28:36.290124 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:28:36.290124 [info ] [MainThread]: [32mAll checks passed![0m
+[0m08:28:36.290124 [debug] [MainThread]: Command `dbt debug` succeeded at 08:28:36.290124 after 16.78 seconds
+[0m08:28:36.290124 [debug] [MainThread]: Connection 'debug' was left open.
+[0m08:28:36.305846 [debug] [MainThread]: On debug: Close
+[0m08:28:36.510288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245557DD100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245661CB740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245681B5340>]}
+[0m08:28:36.510288 [debug] [MainThread]: Flushing usage events
+[0m08:28:37.963210 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:28:43.236960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFDCBF170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFDE2C800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFDE2D3A0>]}
+
+
+============================== 08:28:43.240769 | b10e7740-bf0a-41a9-a5e0-bfe3278f8c13 ==============================
+[0m08:28:43.240769 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:28:43.240769 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt ls', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:28:44.042370 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:28:44.043237 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:28:44.043237 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:28:44.298555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFFAB89E0>]}
+[0m08:28:44.419336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFDEFB9B0>]}
+[0m08:28:44.419336 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:28:44.852078 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:28:44.852078 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:28:44.852078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D9101D8E0>]}
+[0m08:28:49.172368 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.zomato.marts
+- models.zomato.staging
+[0m08:28:49.180760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D9151F560>]}
+[0m08:28:49.221117 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:28:49.269383 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:28:49.309533 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:28:49.335431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D9155D700>]}
+[0m08:28:49.335431 [info ] [MainThread]: Found 545 macros
+[0m08:28:49.341457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b10e7740-bf0a-41a9-a5e0-bfe3278f8c13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D9158A9F0>]}
+[0m08:28:49.341457 [warn ] [MainThread]: [[33mWARNING[0m]: No nodes selected!
+[0m08:28:49.341457 [debug] [MainThread]: Command `dbt ls` succeeded at 08:28:49.341457 after 6.25 seconds
+[0m08:28:49.341457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFE2A0E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D914516A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DFF955310>]}
+[0m08:28:49.341457 [debug] [MainThread]: Flushing usage events
+[0m08:28:50.656113 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:29:23.345107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175DE37B110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E1A1CCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E1A1F080>]}
+
+
+============================== 08:29:23.345107 | 0b684d4a-1315-400a-81dc-832fdae493f9 ==============================
+[0m08:29:23.345107 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:29:23.360775 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select staging', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:29:24.140832 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:29:24.140832 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:29:24.140832 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:29:24.405880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b684d4a-1315-400a-81dc-832fdae493f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F4695D30>]}
+[0m08:29:24.526856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b684d4a-1315-400a-81dc-832fdae493f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175DED89460>]}
+[0m08:29:24.531938 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:29:24.899876 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:29:25.030751 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:29:25.030751 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:29:25.030751 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:29:25.030751 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.zomato.staging
+- models.zomato.marts
+[0m08:29:25.033202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b684d4a-1315-400a-81dc-832fdae493f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F20A9550>]}
+[0m08:29:25.100073 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:29:25.101666 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:29:25.126197 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:29:25.134689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b684d4a-1315-400a-81dc-832fdae493f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F514B6B0>]}
+[0m08:29:25.150475 [info ] [MainThread]: Found 545 macros
+[0m08:29:25.150928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b684d4a-1315-400a-81dc-832fdae493f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E184D400>]}
+[0m08:29:25.150928 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m08:29:25.150928 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m08:29:25.150928 [debug] [MainThread]: Command end result
+[0m08:29:25.184339 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:29:25.184339 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:29:25.200131 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:29:25.204632 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m08:29:25.204632 [debug] [MainThread]: Command `dbt run` succeeded at 08:29:25.204632 after 2.01 seconds
+[0m08:29:25.207561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F4ED8500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F4EBC7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175F4EBE810>]}
+[0m08:29:25.207561 [debug] [MainThread]: Flushing usage events
+[0m08:29:26.715539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:32:49.480958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C361D9880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C37D6EDB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C37D6E060>]}
+
+
+============================== 08:32:49.480958 | d06849cf-146b-451f-aaa7-915a6366be78 ==============================
+[0m08:32:49.480958 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:32:49.480958 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select staging', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:32:50.339200 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:32:50.339200 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:32:50.339200 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:32:50.634719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C485CE0C0>]}
+[0m08:32:50.745339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C48D5BBF0>]}
+[0m08:32:50.745339 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:32:51.101295 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:32:51.139285 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m08:32:51.139285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C498CBCE0>]}
+[0m08:32:51.873654 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.snapshot.zomato
+- models.zomato.staging
+- models.zomato.marts
+[0m08:32:51.889583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4977DD90>]}
+[0m08:32:51.935916 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:32:51.948520 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:32:51.981059 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:32:51.989453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C49876F90>]}
+[0m08:32:51.989453 [info ] [MainThread]: Found 545 macros
+[0m08:32:51.989453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd06849cf-146b-451f-aaa7-915a6366be78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C498399D0>]}
+[0m08:32:51.989453 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'staging' does not match any enabled nodes
+[0m08:32:51.997468 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m08:32:51.997468 [debug] [MainThread]: Command end result
+[0m08:32:52.022784 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:32:52.030958 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:32:52.035895 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:32:52.039370 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\Zomato_Data_pipeline\target\run_results.json
+[0m08:32:52.039370 [debug] [MainThread]: Command `dbt run` succeeded at 08:32:52.039370 after 2.84 seconds
+[0m08:32:52.039370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C361A2D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C497E1A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C49590F20>]}
+[0m08:32:52.039370 [debug] [MainThread]: Flushing usage events
+[0m08:32:53.535180 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:38:36.505829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A255145F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A212A81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A255166F0>]}
+
+
+============================== 08:38:36.517725 | b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c ==============================
+[0m08:38:36.517725 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:38:36.517725 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt ls --resource-type model --output path', 'log_path': 'D:\\Projects\\Zomato_Data_pipeline\\logs'}
+[0m08:38:37.312256 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:38:37.312256 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:38:37.312256 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:38:37.594534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A20D7D250>]}
+[0m08:38:37.708710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A20C79E80>]}
+[0m08:38:37.710552 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:38:38.059003 [debug] [MainThread]: checksum: b0e43d10305132c56d20e06d6acd19b0e2ab954460bc87bfcfc553bb03080190, vars: {}, profile: zomato, target: dev, version: 1.12.0
+[0m08:38:38.209109 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:38:38.209109 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:38:38.209109 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:38:38.209109 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.snapshot.zomato
+- models.zomato.staging
+- models.zomato.marts
+[0m08:38:38.214931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A3672B530>]}
+[0m08:38:38.267538 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\Zomato_Data_pipeline\target\manifest.json
+[0m08:38:38.267538 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\Zomato_Data_pipeline\target\semantic_manifest.json
+[0m08:38:38.308920 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Projects\Zomato_Data_pipeline\target\osi_document.json
+[0m08:38:38.327151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A37100E90>]}
+[0m08:38:38.327151 [info ] [MainThread]: Found 545 macros
+[0m08:38:38.327151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b0f5dd7b-907e-4859-a5d3-e5b95d1ce11c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A2555B770>]}
+[0m08:38:38.334601 [warn ] [MainThread]: [[33mWARNING[0m]: No nodes selected!
+[0m08:38:38.334601 [debug] [MainThread]: Command `dbt ls` succeeded at 08:38:38.334601 after 2.00 seconds
+[0m08:38:38.334601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A212A81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A36FBACC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A36CC04A0>]}
+[0m08:38:38.334601 [debug] [MainThread]: Flushing usage events
+[0m08:38:39.957544 [debug] [MainThread]: An error was encountered while trying to flush usage events

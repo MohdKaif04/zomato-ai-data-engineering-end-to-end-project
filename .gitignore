@@ -1,0 +1,11 @@
+# Environment files
+.env
+**/.env
+
+# Keep example environment files
+!.env.example
+!**/.env.example
+
+# dbt user-specific file
+.user.yml
+**/.user.yml

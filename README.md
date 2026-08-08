@@ -1,15 +1,38 @@
-Welcome to your new dbt project!
+# Zomato AI Data Engineering End-to-End Project
 
-### Using the starter project
+An end-to-end data engineering project built around Zomato-like restaurant data, combining **Airflow orchestration**, **dbt transformations**, **Snowflake warehousing**, **dimensional modeling**, and **AI-powered analytics** for reviews and natural-language querying.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Highlights
 
+- Automated data ingestion and orchestration with **Apache Airflow**
+- Data transformation and modeling with **dbt**
+- Warehousing and analytics on **Snowflake**
+- Dimensional warehouse design with **staging** and **mart** layers
+- AI-based review enrichment and embeddings
+- Natural-language to SQL workflow for analytics queries
+- End-to-end pipeline built for structured and semi-structured restaurant data
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Tech Stack
+
+- **Orchestration:** Apache Airflow
+- **Transformations:** dbt
+- **Warehouse:** Snowflake
+- **Programming:** Python, SQL
+- **AI / NLP:** embeddings, LLM-based review processing, text-to-SQL
+- **Storage / Input Data:** CSV-based source data
+- **Version Control:** Git, GitHub
+
+## Architecture Overview
+
+```text
+Raw Data (CSV)
+      ↓
+Airflow DAGs
+      ↓
+Staging Models (dbt)
+      ↓
+Marts / Dimensional Models (dbt)
+      ↓
+Snowflake
+      ↓
+Analytics / AI Insights / Text-to-SQL

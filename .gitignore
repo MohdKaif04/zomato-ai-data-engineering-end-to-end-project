@@ -9,3 +9,13 @@
 # dbt user-specific file
 .user.yml
 **/.user.yml
+
+# AI generated files
+ai/*.parquet
+
+# Generated files
+logs/
+target/
+airflow/logs/
+__pycache__/
+**/__pycache__/

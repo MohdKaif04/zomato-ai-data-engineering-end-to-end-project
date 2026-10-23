@@ -391,10 +391,3 @@ B.Tech Data Science
 ## ⭐ Project
 
 If you found this project useful or interesting, consider giving the repository a ⭐..
-
-
-### Ek cheez main deliberately nahi kar raha
-
-README mein **fake claims** nahi daale hain—for example "production-ready", "millions of records", "highly scalable", "real-time pipeline" etc. Jab tak tumne actually implement nahi kiya, aise claims recruiter ke technical interview mein ulte pad sakte hain.
-
-Aur **S3 → Airflow → dbt → Snowflake** architecture tabhi exactly aise present karo agar tumhare actual DAG/pipeline
